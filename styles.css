@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Monument Extended';
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+}
+
+#logo {
+    display: flex;
+    text-align: justify;
+    gap: 30%;
+    color: pink;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    border: .5rem solid red;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #353535;
+}
+
+.item {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.icon {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    color: rgb(0, 255, 238);
+    letter-spacing: 4px;
+}
+
+
+/* Body */
+.body{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    border: .5rem solid blue;
+}
+.name {
+    height: 100vh;
+    width: 400px;
+    margin-top: 220px;
+    text-align: left;
+    line-height: 3rem;
+    font-family: 'Monument Extended';
+}
+
+.name p {
+    color: rgb(243, 237, 237);
+    font-family: 'Monument Extended';
+    font-size: 2rem;
+}
+
+.name-description p{
+    color: rgb(243, 237, 237);
+    font-family: 'Monument Extended';
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.name-description h5{
+    color: rgb(243, 237, 237);
+    font-family: 'Monument Extended';
+    text-align: justify;
+    font-size: 5rem;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid turquoise;
+    padding: 5px;
+    color: turquoise;
+    cursor: pointer;
+}
+
+header {
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+.btns-container .fas{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #181818;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* About */
+.about-container {
+    height: 80vh;
+    text-align: justify;
+}
+.about-container h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    color: turquoise;
+}
+
+.about-container p {
+    color: white;
+}
+
+/* Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.portfolio-container h1 {
+    padding-bottom: 3rem;
+    color: rgb(255, 86, 187);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio h1 {
+    color: violet;
+}
+
+.portfolio h2 {
+    color: turquoise;
+}
+
+.portfolio-container1,
+.portfolio-container2
+ {
+    display: flex;
+}
+
+/* Achievements */
+.challenges {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 90vh;
+}
+
+.challenges h1 {
+    text-align: justify;
+    color: turquoise;
+}
+
+
+/* arrow animation */
+.scroll-down {
+    position: absolute;
+    left: 10%;
+    bottom: 8px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid rgb(255, 103, 222);
+    border-right: 2px solid rgb(18, 236, 252);
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down 4s ease-in-out infinite;
+    animation:         fade_move_down 4s ease-in-out infinite;
+  }
+  
+  
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  
+  
+  
