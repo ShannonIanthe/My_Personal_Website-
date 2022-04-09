@@ -64,10 +64,13 @@
 <div class="portfolio-container1">
 <div class="portfolio">
     <h2>HTML & CSS</h2>
-    <div class="portfolio-img">image</div>
-    <div class="portfolio-name">Name</div>
-    <div class="portfolio-name">Code</div>
-    <div class="portfolio-description"><p>Lorem ipsum dolor sit amet.</p></div>
+    <div class="portfolio-img">
+        <video src="Oli_video.mov" type="video" loop class="clip" width="320" height="240" muted></video>
+    </div>
+    <div class="portfolio-name">Personal Website for Client</div>
+    <div class="portfolio-name"><a href="https://github.com/ShannonIanthe/Olivera_Professional_Profile">Github Codes</a></div>
+    <div class="portfolio-description"><p>Created a professional profile for an individual seeking a job opportunity in 
+        Human Resources.</p></div>
     <img />
 </div>
 
@@ -149,6 +152,18 @@
 <!-- end of main tag-->
 </div>
 
+
+<script>
+    const clip = document.querySelectorAll('.clip');
+    for (let i = 0; i<clip.length; i++) {
+        clip[i].addEventListener('mouseenter', function(e) {
+            clip[i].play()
+        })
+        clip[i].addEventListener('mouseout', function(e) {
+            clip[i].pause()
+    })
+}
+</script>
 
 </body>
 </html>
